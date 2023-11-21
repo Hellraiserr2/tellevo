@@ -1,0 +1,15 @@
+
+
+<app-loading *ngIf="!isUserLocationRedy; else mapRedy"></app-loading>
+
+<ng-template #mapRedy>
+    <app-search-bar></app-search-bar>
+    <app-map-view></app-map-view>
+    <app-btn-my-location></app-btn-my-location>
+    <!-- Agrega un mensaje de consola para verificar si este bloque se ejecuta -->
+    <script>console.log('mapRedy block executed');</script>
+</ng-template>
+
+
+<app-angular-logo></app-angular-logo>
+

@@ -31,6 +31,10 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [{
+                "replace": "ionic/tellevo/src/environments/environments.ts",
+                "with": "ionic/tellevo/src/environments/environments.prod.ts"
+              }],
               "budgets": [
                 {
                   "type": "initial",
@@ -51,7 +55,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"

@@ -1,0 +1,10 @@
+.map-container {
+    height: 100vh;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 70vw; /* Se ha reducido el ancho para dejar espacio para la barra de búsqueda */
+    z-index: 1; /* Asegura que el mapa esté en la parte superior */
+}
+
+
